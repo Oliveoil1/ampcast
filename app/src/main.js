@@ -28,7 +28,7 @@ unhandled();
 
 if (!app.requestSingleInstanceLock()) {
     // Prevent multiple instances of the app
-    app.quit();
+    app.exit(0);
 }
 
 initSystemAudio();
